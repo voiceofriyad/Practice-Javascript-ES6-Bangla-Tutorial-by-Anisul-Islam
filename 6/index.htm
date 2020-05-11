@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number method | toFixed | toPrecision</title>
+</head>
+<body>
+
+    <script>
+        var num = 20;
+        console.log(typeof(num));
+
+        num = "500" ;
+        console.log(typeof(num));
+
+        num = toString(num);
+        console.log(typeof(num));
+
+        num = "200";
+        num = parseInt(num);
+        console.log(typeof(num));
+
+        num = "20.25";
+        num = parseFloat(num);
+        console.log(typeof(num));
+
+        num = 2.5678
+        console.log(num.toFixed());
+        console.log(num.toFixed(2));
+        console.log(num.toPrecision(4));
+
+        console.log(Number("12"));
+
+
+    </script>
+    
+</body>
+</html>

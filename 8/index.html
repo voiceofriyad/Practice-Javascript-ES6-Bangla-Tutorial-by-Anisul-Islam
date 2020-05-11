@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library functions for string</title>
+</head>
+<body>
+
+    <script>
+        var text = "Bangladesh";
+        document.write(text.length);
+        document.write("<br />");
+
+        document.write(text.charAt(3));
+        document.write("<br />");
+
+        text =  text.toUpperCase();
+        document.write(text);
+        document.write("<br />");
+
+        text = text.toLowerCase();
+        document.write(text);
+        document.write("<br />");
+
+
+        var text1 = prompt("Enter your name:");
+        document.write(text1.length);
+        document.write("<br />");
+        
+        var text2 = " Chandpur";
+        document.write(text.concat(text2));
+
+        document.write("<br />");
+
+        var text3 = "Tongi";
+        text =  text3.slice(2, 4);
+        document.write(text);
+
+        document.write("<br />");
+
+        /* Program for Task 2*/
+        // A program to understand string library functions
+
+       //getting firstname and lastname from user
+      
+       var firstName = prompt("Enter your first name: ");
+       var lastName = prompt("Enter your last name: ");
+
+       //adding firstname and lastname
+
+       var fullName = firstName + lastName;
+    
+
+       //printing the full name
+
+      document.write(fullName + "<br />");    
+
+      //printing the length of full name
+
+      document.write("Total length of full name is: " + fullName.length + "<br />");
+
+      //printing the full name in uppercase
+
+      document.write(fullName.toUpperCase() + "<br />");
+
+      //fullname 2 position
+
+      document.write(fullName.slice(2,3));
+
+
+
+    
+
+
+
+
+    </script>
+
+</body>
+</html>

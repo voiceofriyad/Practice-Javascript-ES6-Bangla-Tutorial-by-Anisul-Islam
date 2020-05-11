@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational and Logical Operator</title>
+</head>
+<body>
+
+    <script>
+        // Relational operator: >, >=, <, <=, ==, ===, !=, !==
+
+        // Logical operator: &&, ||, !
+
+        var num1 = 20;
+        var num2 = 25;
+
+        document.write((num1 > num2) + "<br />");
+        document.write((num1 >= num2) + "<br />");
+        document.write((num1 < num2) + "<br />");
+        document.write((num1 <= num2) + "<br />");
+        document.write((num1 == num2) + "<br />");
+        document.write((20 == "20") + "<br />");
+        document.write((20 === "20") + "<br />");
+        document.write((20 === 20) + "<br />");
+        document.write((25 != 20) + "<br />");
+
+        document.write("<br />");
+        document.write("<br />");
+
+        var num3 = 50;
+        var num4 = 30;
+        var num5 = 20;
+
+        document.write((num3 > num4 && num3 > num5) + "<br />");
+        document.write((num3 > num4 && num5 > num4) + "<br />");
+
+
+        document.write((num3 > num4 || num5 > num4 || num5 > num3) + "<br />");
+        document.write((num3 < num4 || num5 > num4) + "<br />");
+
+
+        document.write("<br />");
+        document.write("<br />");
+
+
+        document.write(!true + "<br />");
+        document.write(!false + "<br />");
+        document.write(!(25>20) + "<br />");
+        document.write(!(25<20) + "<br />");
+
+
+
+
+        
+        
+    </script>
+    
+</body>
+</html>
