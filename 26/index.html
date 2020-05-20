@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+
+    <script>
+        var names = ["Anis", "razu", "kalam", "basar"];
+        document.write(names + "<br />");
+
+        names.shift();
+        document.write(names + "<br />");
+
+        names.unshift("sagor");
+        document.write(names + "<br />");
+
+
+
+        names.splice(2,0,"karim", "rahim");
+        document.write(names + "<br />");
+
+        names.splice(3,1,"sazu");
+        document.write(names + "<br />");
+
+        var newArray = names.slice(1);
+        document.write(newArray + "<br />");
+
+
+
+
+        var sortNames = names.sort();
+        document.write(sortNames + "<br />");
+        names.reverse();
+        document.write(sortNames + "<br />");
+
+
+        var num = [70,20,90,40,55];
+        num.sort(function(a,b){
+            return a-b;
+        });
+        document.write(num + "<br />");
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+        
+</body>
+</html>

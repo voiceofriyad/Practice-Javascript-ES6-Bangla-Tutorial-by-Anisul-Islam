@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+    <script>
+        //creating a function
+        function square(num){
+            var result = num * num;
+            document.write("Result : " + result + "<br />");
+        }
+
+        // calling a function
+        square(4);
+        square(5);
+        square(6);
+
+        function cube(num){
+            var result = num * num * num;
+            return result;
+            
+        }
+
+        document.write("Result : " + cube(3) + "<br />");
+
+        var x = cube(5);
+        document.write(x);
+
+        // add function
+
+        function addition(x,y){
+            var result = x + y;
+            document.write("Sum is: " + result + "<br />");
+        }
+
+        addition(25,35);
+        addition(654, 65);
+
+
+
+        // sub function
+
+        function subtraction(x,y){
+            var result = x - y;
+            document.write("Sub is: " + result + "<br />");
+        }
+
+        subtraction(50, 25);
+        subtraction(10, 25);
+
+
+
+
+    </script>
+
+</body>
+</html>

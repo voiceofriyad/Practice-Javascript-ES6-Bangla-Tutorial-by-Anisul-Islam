@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <script>
+        //constructor
+        function student(name, age, cgpa, lang){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+            this.display =  function(){
+                document.write(this.name + "<br />");
+                document.write(this.age + "<br />");
+                document.write(this.cgpa + "<br />");
+                document.write(this.lang + "<br />");
+            }
+        }
+
+        var student1 = new student("Rabiul Islam",25,3.56,["Bengali", "Hindi", "English"]);
+        var student2 = new student("Kamrul Islam",28,3.28,["Bengali", "Hindi", "English"]);
+        var student3 = new student("Hasan Islam",15,3.73,["Bengali", "Hindi", "English"]);
+
+
+
+        document.write(student1.age + "<br />");
+        document.write(student2.cgpa + "<br />");
+        document.write(student1.lang + "<br />");
+        document.write(student3.age + "<br />");
+
+        document.write("<br /> <br /> <br />");
+
+
+        student1.display();
+        student2.display();
+        student3.display();
+
+
+
+
+
+
+        var student5 = {
+            name: "Anisul Islam",
+            age: 27,
+            cgpa: 3.92,
+            lang: ["Bengali", "Hindi", "English"]
+        }
+        document.write(student5.age + "<br />");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick property</title>
+</head>
+<body>
+    <button onclick="myMessage()">Click Me</button>
+    <button onclick="myMessage2()">Click Me</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <button onclick="myPicture1()">Book1</button>
+    <button onclick="myPicture2()">Book2</button>
+    <br /> <br /> <br />
+    <img id="image" src="#" width="300" height="300">
+    
+
+
+
+
+
+    <script>
+        function myMessage(){
+            var myVar = document.querySelector("#para");
+            myVar.innerHTML = "You have clicked on button 1"
+        }
+
+        function myMessage2(){
+            var myVar = document.querySelector("#para");
+            myVar.innerHTML = "You have clicked on button 2"
+        }
+
+
+        var myPic = document.querySelector("#image");
+
+        function myPicture1(){
+            myPic.src = "book1.jpg";           
+        }
+
+        function myPicture2(){
+            myPic.src = "book2.png";       
+        }
+
+    </script>
+    
+</body>
+</html>

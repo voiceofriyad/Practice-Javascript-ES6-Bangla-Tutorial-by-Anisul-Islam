@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        var names = new Array(5);
+        names[0] = "Faysal";
+        names[1] = "Alam";
+        names[2] = "Riyad";
+        names[3] = "Parvez";
+        names[4] = "Zihad";
+
+        document.write(names[2] + "<br />") ;
+        document.write(names + "<br />");
+        document.write(names.length + "<br />");
+
+        var names1 = ["rakib", "Rahat", "razu"];
+        document.write(names1 + "<br />");
+        names1.push("sakib", "kalam");
+        document.write(names1 + "<br />");
+        
+        names1.pop();
+        document.write(names1 + "<br />");
+
+        var country1 = ["Bangladesh", "India"];
+        var country2 = ["Pakistan", "Nepal"];
+
+        var country=  country1.concat(country2);
+        document.write(country);
+
+
+    </script>
+
+</body>
+</html>
